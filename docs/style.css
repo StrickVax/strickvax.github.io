@@ -1,3 +1,8 @@
 body {
     font-family: Arial, sans-serif;
 }
+
+img {
+    width: 400px;
+    height: auto;
+}
