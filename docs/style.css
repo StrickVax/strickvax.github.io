@@ -7,7 +7,12 @@ h1 {
     text-align: center;
 }
 
+p {
+    color: #F2EDDB;
+}
+
 img {
-    width: 400px;
+    width: 200px;
     height: auto;
+    margin: 1em;
 }
