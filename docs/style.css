@@ -3,6 +3,10 @@ body {
     margin: 0 10%;
 }
 
+h1 {
+    text-align: center;
+}
+
 img {
     width: 400px;
     height: auto;
