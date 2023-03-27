@@ -3,6 +3,18 @@ body {
     margin: 0 10%;
 }
 
+a.one:link {
+    color: #E9987A
+}
+
+a.one:visited {
+    color: #E7CEBA;
+}
+
+a.one:hover {
+    color: #CB373D;
+}
+
 h1 {
     text-align: center;
 }
