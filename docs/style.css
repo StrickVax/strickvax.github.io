@@ -11,8 +11,15 @@ a.one:visited {
     color: #E7CEBA;
 }
 
-a.one:hover {
-    color: #CB373D;
+.nav {
+    background-color: #CB373D;
+    text-align: center;
+}
+
+.nav li {
+    font-size: larger;
+    display: inline-block;
+    padding: 20px;
 }
 
 h1 {
