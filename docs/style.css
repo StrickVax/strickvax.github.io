@@ -1,10 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #1B121C;
-    color: #F2EDDB;
+    background-color: #dedede;
+    color: #472420;
+    line-height: 1.6;
 }
 
+a,
 a.one:link,
 a.one:visited {
     color: #E9987A;
@@ -12,7 +14,8 @@ a.one:visited {
     transition: color 0.3s;
 }
 
-a.one:hover {
+a.one:hover,
+a:hover {
     color: #E7CEBA;
 }
 
@@ -34,15 +37,28 @@ a.one:hover {
     padding: 10px 20px;
 }
 
-.header {
+.header,
+.skills,
+.projects {
     text-align: center;
     padding: 2em;
 }
 
-.header img {
+.header img,
+.project img {
     width: 200px;
     height: auto;
     margin: 1em;
+}
+
+.skills ul,
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project {
+    margin-bottom: 20px;
 }
 
 .footer {
@@ -55,4 +71,16 @@ a.one:hover {
 
 p {
     margin: 10px 0;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 768px) {
+    .nav li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        display: block;
+    }
 }
