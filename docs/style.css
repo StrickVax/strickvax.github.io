@@ -1,33 +1,26 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #dedede;
-    color: #472420;
+    background-color: #e3e9eb;
+    color: #202835;
     line-height: 1.6;
 }
 
 a,
 a.one:link,
 a.one:visited {
-    color: #E9987A;
+    color: #7a89e9;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-a.one:hover,
-a:hover {
-    color: #E7CEBA;
-}
-
 .nav {
-    background-color: #CB373D;
-    text-align: center;
     padding: 10px 0;
 }
 
 .nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10;
     margin: 0;
 }
 
@@ -70,6 +63,10 @@ a:hover {
     margin: 1em;
 }
 
+.menu-logo{
+    width: 5em;
+}
+
 .skills ul,
 .projects ul {
     list-style-type: none;
@@ -82,7 +79,7 @@ a:hover {
 
 .footer {
     position: relative;
-    background-color: #A9345E;
+    background-color: #3453a9;
     text-align: right;
     padding: 20px;
     margin-top: 20px;
