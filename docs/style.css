@@ -13,7 +13,7 @@ a.one:visited {
 }
 
 .nav {
-    padding: 2em 0;
+    padding: 2em;
 }
 
 .nav-content {
@@ -32,11 +32,9 @@ a.one:visited {
     position: relative;
 }
 
-.logo-container,
-.menu-logo,
-.logo-shadow {
+.logo-container {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
 }
 
 .menu-logo {
@@ -45,10 +43,10 @@ a.one:visited {
 }
 
 .logo-shadow {
+    position: absolute;
     width: 3em;
-    height: 3em;
-    right: 2.5em;
-    top: .4em;
+    left: .6em;
+    top: .3em;
     z-index: 1;
 }
 
