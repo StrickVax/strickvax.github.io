@@ -1,14 +1,14 @@
 :root {
     --home-logo: rgb(38, 146, 255);
-    --home-background: #e5f0f3;
+    --home-background: #edf7fa;
     --home-menu: #82eaf8;
 
-    --projects-logo: rgb(31, 231, 88);
+    --projects-logo: rgb(30, 189, 75);
     --projects-background: #f4fbf2;
     --projects-menu: #a5f882;
 
     --about-logo: rgb(255, 119, 56);
-    --about-background: #fff9ee;
+    --about-background: #faf7f1;
     --about-menu: #f8b782;
 }
 
