@@ -1,3 +1,40 @@
+:root {
+    --home-color: rgb(38, 146, 255);
+    --projects-color: rgb(37, 255, 85);
+    --about-color: rgb(255, 119, 56);
+}
+
+/* Apply the home color set */
+body.home .menu-logo rect {
+    stroke: var(--home-color);
+}
+
+body.home .menu-logo polygon {
+    stroke: var(--home-color);
+    fill: var(--home-color);
+}
+
+/* Apply the projects color set */
+body.projects .menu-logo rect {
+    stroke: var(--projects-color);
+}
+
+body.projects .menu-logo polygon {
+    stroke: var(--projects-color);
+    fill: var(--projects-color);
+}
+
+/* Apply the about color set */
+body.about .menu-logo rect {
+    stroke: var(--about-color);
+}
+
+body.about .menu-logo polygon {
+    stroke: var(--about-color);
+    fill: var(--about-color);
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
