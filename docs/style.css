@@ -1,26 +1,29 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #e3e9eb;
+    background-color: #f0f6f8;
     color: #202835;
     line-height: 1.6;
 }
 
+/* Drop-down links */
 a,
 a.one:link,
 a.one:visited {
-    color: #7a89e9;
+    color: #111848;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
 .nav {
-    padding: 10px 0;
+    padding: 2em 0;
 }
 
+/* TODO: fix Flex displaying menu */
 .nav ul {
+    display: flex;
+    align-items: center;
     list-style-type: none;
-    padding: 10;
+    padding: 1em;
     margin: 0;
 }
 
@@ -31,29 +34,34 @@ a.one:visited {
     position: relative;
 }
 
-.nav .menu-dropdown-content {
+.menu-logo {
+    width: 3em;
+}
+
+.menu .menu-button {
+    font-size: larger;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.menu-dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: #8cf2ff;
     padding: 12px 16px;
     z-index: 1;
     color: black;
 }
 
+
 .nav .menu-dropdown:hover .menu-dropdown-content {
     display: block;
-}
-
-.nav .logo {
-    float: right;
 }
 
 .header,
 .skills,
 .projects {
     text-align: center;
-    padding: 2em;
 }
 
 .header img,
@@ -63,9 +71,6 @@ a.one:visited {
     margin: 1em;
 }
 
-.menu-logo{
-    width: 5em;
-}
 
 .skills ul,
 .projects ul {
@@ -79,8 +84,8 @@ a.one:visited {
 
 .footer {
     position: relative;
-    background-color: #3453a9;
-    text-align: right;
+    background-color: #add3e4;
+    text-align: center;
     padding: 20px;
     margin-top: 20px;
 }
