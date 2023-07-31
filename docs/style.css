@@ -1,12 +1,15 @@
 :root {
     --home-logo: rgb(38, 146, 255);
     --home-background: #e5f0f3;
+    --home-menu: #82eaf8;
 
-    --projects-logo: rgb(37, 255, 85);
-    --projects-background: #e9f5e4;
+    --projects-logo: rgb(31, 231, 88);
+    --projects-background: #f4fbf2;
+    --projects-menu: #a5f882;
 
     --about-logo: rgb(255, 119, 56);
     --about-background: #fff9ee;
+    --about-menu: #f8b782;
 }
 
 /* Apply the home color set */
@@ -23,6 +26,14 @@ body.home {
     background-color: var(--home-background);
 }
 
+body.home .menu-dropdown-content {
+    background-color: var(--home-menu);
+}
+
+body.home .logo-shadow {
+    fill: var(--home-menu);
+}
+
 /* Apply the projects color set */
 body.projects .menu-logo rect {
     stroke: var(--projects-logo);
@@ -37,6 +48,14 @@ body.projects {
     background-color: var(--projects-background);
 }
 
+body.projects .menu-dropdown-content {
+    background-color: var(--projects-menu);
+}
+
+body.projects .logo-shadow {
+    fill: var(--projects-menu);
+}
+
 /* Apply the about color set */
 body.about .menu-logo rect {
     stroke: var(--about-logo);
@@ -49,6 +68,14 @@ body.about .menu-logo polygon {
 
 body.about {
     background-color: var(--about-background);
+}
+
+body.about .menu-dropdown-content {
+    background-color: var(--about-menu);
+}
+
+body.about .logo-shadow {
+    fill: var(--about-menu);
 }
 
 body {
@@ -85,8 +112,24 @@ a.one:visited {
     position: relative;
 }
 
+.logo-container {
+    position: relative;
+    display: inline-block;
+}
+
 .menu-logo {
     width: 3em;
+    position: relative;
+    z-index: 2;
+}
+
+.logo-shadow {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    right: 2.5em;
+    top: .4em;
+    z-index: 1;
 }
 
 .menu-button {
@@ -98,7 +141,6 @@ a.one:visited {
 .menu-dropdown-content {
     display: none;
     position: absolute;
-    background-color: #8cf2ff;
     padding: 12px 16px;
     z-index: 1;
     color: black;
