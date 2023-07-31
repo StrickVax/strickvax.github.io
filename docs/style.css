@@ -1,44 +1,59 @@
 :root {
-    --home-color: rgb(38, 146, 255);
-    --projects-color: rgb(37, 255, 85);
-    --about-color: rgb(255, 119, 56);
+    --home-logo: rgb(38, 146, 255);
+    --home-background: #e5f0f3;
+
+    --projects-logo: rgb(37, 255, 85);
+    --projects-background: #e9f5e4;
+
+    --about-logo: rgb(255, 119, 56);
+    --about-background: #fff9ee;
 }
 
 /* Apply the home color set */
 body.home .menu-logo rect {
-    stroke: var(--home-color);
+    stroke: var(--home-logo);
 }
 
 body.home .menu-logo polygon {
-    stroke: var(--home-color);
-    fill: var(--home-color);
+    stroke: var(--home-logo);
+    fill: var(--home-logo);
+}
+
+body.home {
+    background-color: var(--home-background);
 }
 
 /* Apply the projects color set */
 body.projects .menu-logo rect {
-    stroke: var(--projects-color);
+    stroke: var(--projects-logo);
 }
 
 body.projects .menu-logo polygon {
-    stroke: var(--projects-color);
-    fill: var(--projects-color);
+    stroke: var(--projects-logo);
+    fill: var(--projects-logo);
+}
+
+body.projects {
+    background-color: var(--projects-background);
 }
 
 /* Apply the about color set */
 body.about .menu-logo rect {
-    stroke: var(--about-color);
+    stroke: var(--about-logo);
 }
 
 body.about .menu-logo polygon {
-    stroke: var(--about-color);
-    fill: var(--about-color);
+    stroke: var(--about-logo);
+    fill: var(--about-logo);
 }
 
+body.about {
+    background-color: var(--about-background);
+}
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f0f6f8;
     color: #202835;
     line-height: 1.6;
 }
