@@ -1,83 +1,3 @@
-:root {
-    --home-logo: rgb(38, 146, 255);
-    --home-background: #edf7fa;
-    --home-menu: #82eaf8;
-
-    --projects-logo: rgb(30, 189, 75);
-    --projects-background: #f4fbf2;
-    --projects-menu: #a5f882;
-
-    --about-logo: rgb(255, 119, 56);
-    --about-background: #faf7f1;
-    --about-menu: #f8b782;
-}
-
-/* Apply the home color set */
-body.home .menu-logo rect {
-    stroke: var(--home-logo);
-}
-
-body.home .menu-logo polygon {
-    stroke: var(--home-logo);
-    fill: var(--home-logo);
-}
-
-body.home {
-    background-color: var(--home-background);
-}
-
-body.home .menu-dropdown-content {
-    background-color: var(--home-menu);
-}
-
-body.home .logo-shadow {
-    fill: var(--home-menu);
-}
-
-/* Apply the projects color set */
-body.projects .menu-logo rect {
-    stroke: var(--projects-logo);
-}
-
-body.projects .menu-logo polygon {
-    stroke: var(--projects-logo);
-    fill: var(--projects-logo);
-}
-
-body.projects {
-    background-color: var(--projects-background);
-}
-
-body.projects .menu-dropdown-content {
-    background-color: var(--projects-menu);
-}
-
-body.projects .logo-shadow {
-    fill: var(--projects-menu);
-}
-
-/* Apply the about color set */
-body.about .menu-logo rect {
-    stroke: var(--about-logo);
-}
-
-body.about .menu-logo polygon {
-    stroke: var(--about-logo);
-    fill: var(--about-logo);
-}
-
-body.about {
-    background-color: var(--about-background);
-}
-
-body.about .menu-dropdown-content {
-    background-color: var(--about-menu);
-}
-
-body.about .logo-shadow {
-    fill: var(--about-menu);
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -85,7 +5,6 @@ body {
     line-height: 1.6;
 }
 
-/* Drop-down links */
 a,
 a.one:link,
 a.one:visited {
@@ -105,37 +24,32 @@ a.one:visited {
     margin: 0;
 }
 
-.nav li {
+.nav li,
+.menu-button {
     font-size: larger;
     display: inline-block;
     padding: 10px 20px;
     position: relative;
 }
 
-.logo-container {
+.logo-container,
+.menu-logo,
+.logo-shadow {
     position: relative;
     display: inline-block;
 }
 
 .menu-logo {
     width: 3em;
-    position: relative;
     z-index: 2;
 }
 
 .logo-shadow {
-    position: relative;
     width: 3em;
     height: 3em;
     right: 2.5em;
     top: .4em;
     z-index: 1;
-}
-
-.menu-button {
-    font-size: larger;
-    padding: 10px 20px;
-    cursor: pointer;
 }
 
 .menu-dropdown-content {
@@ -148,7 +62,8 @@ a.one:visited {
 
 .header,
 .skills,
-.projects {
+.projects,
+.project {
     text-align: center;
 }
 
@@ -159,15 +74,10 @@ a.one:visited {
     margin: 1em;
 }
 
-
 .skills ul,
 .projects ul {
     list-style-type: none;
     padding: 0;
-}
-
-.project {
-    margin-bottom: 20px;
 }
 
 .footer {
@@ -181,8 +91,6 @@ a.one:visited {
 p {
     margin: 10px 0;
 }
-
-/* Responsive design */
 
 @media screen and (max-width: 768px) {
     .nav li {

@@ -1,0 +1,26 @@
+:root {
+    --home-logo: rgb(38, 146, 255);
+    --home-background: #edf7fa;
+    --home-menu: #82eaf8;
+}
+
+body.home .menu-logo rect {
+    stroke: var(--home-logo);
+}
+
+body.home .menu-logo polygon {
+    stroke: var(--home-logo);
+    fill: var(--home-logo);
+}
+
+body.home {
+    background-color: var(--home-background);
+}
+
+body.home .menu-dropdown-content {
+    background-color: var(--home-menu);
+}
+
+body.home .logo-shadow {
+    fill: var(--home-menu);
+}

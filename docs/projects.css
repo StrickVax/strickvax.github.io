@@ -1,0 +1,26 @@
+:root {
+    --projects-logo: rgb(30, 189, 75);
+    --projects-background: #f4fbf2;
+    --projects-menu: #a5f882;
+}
+
+body.projects .menu-logo rect {
+    stroke: var(--projects-logo);
+}
+
+body.projects .menu-logo polygon {
+    stroke: var(--projects-logo);
+    fill: var(--projects-logo);
+}
+
+body.projects {
+    background-color: var(--projects-background);
+}
+
+body.projects .menu-dropdown-content {
+    background-color: var(--projects-menu);
+}
+
+body.projects .logo-shadow {
+    fill: var(--projects-menu);
+}

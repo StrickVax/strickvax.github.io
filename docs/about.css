@@ -1,0 +1,26 @@
+:root {
+    --about-logo: rgb(255, 119, 56);
+    --about-background: #faf7f1;
+    --about-menu: #f8b782;
+}
+
+body.about .menu-logo rect {
+    stroke: var(--about-logo);
+}
+
+body.about .menu-logo polygon {
+    stroke: var(--about-logo);
+    fill: var(--about-logo);
+}
+
+body.about {
+    background-color: var(--about-background);
+}
+
+body.about .menu-dropdown-content {
+    background-color: var(--about-menu);
+}
+
+body.about .logo-shadow {
+    fill: var(--about-menu);
+}
