@@ -18,8 +18,7 @@ a.one:visited {
     padding: 2em 0;
 }
 
-/* TODO: fix Flex displaying menu */
-.nav ul {
+.nav-content {
     display: flex;
     align-items: center;
     list-style-type: none;
@@ -38,7 +37,7 @@ a.one:visited {
     width: 3em;
 }
 
-.menu .menu-button {
+.menu-button {
     font-size: larger;
     padding: 10px 20px;
     cursor: pointer;
@@ -51,11 +50,6 @@ a.one:visited {
     padding: 12px 16px;
     z-index: 1;
     color: black;
-}
-
-
-.nav .menu-dropdown:hover .menu-dropdown-content {
-    display: block;
 }
 
 .header,
