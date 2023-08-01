@@ -1,7 +1,8 @@
 :root {
-    --projects-logo: rgb(30, 189, 75);
+    --projects-logo: #03D400;
     --projects-background: #f4fbf2;
     --projects-menu: #a5f882;
+    --projects-color: #012D00;
 }
 
 body.projects .menu-logo rect {
@@ -15,6 +16,7 @@ body.projects .menu-logo polygon {
 
 body.projects {
     background-color: var(--projects-background);
+    color: var(--projects-color);
 }
 
 body.projects .menu-dropdown-content {

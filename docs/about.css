@@ -1,7 +1,8 @@
 :root {
-    --about-logo: rgb(255, 119, 56);
+    --about-logo: #f98d11;
     --about-background: #faf7f1;
-    --about-menu: #f8b782;
+    --about-menu: #fcb275;
+    --about-color: #321500;
 }
 
 body.about .menu-logo rect {
@@ -15,7 +16,9 @@ body.about .menu-logo polygon {
 
 body.about {
     background-color: var(--about-background);
+    color: var(--about-color); /* This will apply the color to the text */
 }
+
 
 body.about .menu-dropdown-content {
     background-color: var(--about-menu);
