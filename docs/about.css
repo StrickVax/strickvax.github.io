@@ -16,7 +16,8 @@ body.about .menu-logo polygon {
 
 body.about {
     background-color: var(--about-background);
-    color: var(--about-color); /* This will apply the color to the text */
+    color: var(--about-color);
+    /* This will apply the color to the text */
 }
 
 
@@ -26,4 +27,28 @@ body.about .menu-dropdown-content {
 
 body.about .logo-shadow {
     fill: var(--about-menu);
+}
+
+#about-me {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+#about-me img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+    float: left;
+}
+
+#about-me p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#about-me a {
+    color: #fcb275;
 }
