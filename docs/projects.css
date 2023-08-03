@@ -26,3 +26,52 @@ body.projects .menu-dropdown-content {
 body.projects .logo-shadow {
     fill: var(--projects-menu);
 }
+
+.project {
+    border: 1px solid #eaeaea;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #ecffe2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+    font-size: 1.5em;
+    color: #57744a;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 15px 0;
+}
+
+.project-description {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666;
+}
+
+.project-tech,
+.project-role {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.project-link,
+.project-code {
+    display: inline-block;
+    background-color: #17a13c;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 10px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover,
+.project-code:hover {
+    background-color: #0c740f;
+}
