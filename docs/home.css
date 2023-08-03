@@ -24,3 +24,31 @@ body.home .menu-dropdown-content {
 body.home .logo-shadow {
     fill: var(--home-menu);
 }
+
+.header {
+    background: rgb(38, 146, 255);
+    color: #333;
+    padding: 2em;
+    text-align: center;
+}
+
+.introduction {
+    padding: 2em;
+    text-align: center;
+}
+
+.skills {
+    padding: 2em;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer {
+    background: rgb(38, 146, 255);
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
