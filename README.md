@@ -1,3 +1,3 @@
 # strickvax.github.io
 ---
-(c) 2023 StrickVax
+(c) 2024 StrickVax
